@@ -6,7 +6,7 @@ Inventory::Application.routes.draw do
   get 'sign_in' => 'sessions#new', :as => :sign_in
   get 'sign_out' => 'sessions#destroy', :as => :sign_out
 
-  root :to => 'welcome#index'
+  root :to => 'products#index'
 
   resources :products do
     collection do
