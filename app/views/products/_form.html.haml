@@ -1,5 +1,10 @@
 =semantic_form_for @product, :html => {:multipart => true} do |f|
   =f.input :name
   =f.input :category, :as => :select, :collection => Product::CATEGORIES
-  =f.input :image, :as => :file
+  -if @product.image.present?
+    Current Image:
+    =link_to "#{@product.image_file_name} (View)", @product.image.url
+    =f.input :image, :as => :file, :label => "Change Image"
+  -else
+    =f.input :image, :as => :file
   =f.submit
