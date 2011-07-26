@@ -10,3 +10,5 @@ gem 'uglifier'
 gem 'jquery-rails'
 gem 'inherited_resources'
 gem 'formtastic'
+
+gem 'paperclip'
