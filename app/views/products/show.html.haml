@@ -1,0 +1,10 @@
+%p=link_to 'Return to Products', products_path
+%h1=@product.name
+%p
+  Category:
+  =@product.category
+%p
+  -if @product.image.present?
+    =image_tag @product.image.url
+  -else
+    No image set

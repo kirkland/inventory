@@ -5,13 +5,15 @@
     %th ID
     %th Name
     %th Category
-    %th On Hand
     %th Image
+    %th Actions
   -@products.each do |product|
     %tr
       %td=product.id
       %td=product.name
       %td=product.category
-      %td=product.on_hand
       %td image here
-
+      %td
+        =link_to 'Edit', edit_product_path(product)
+        \|
+        =link_to 'Show', product_path(product)
