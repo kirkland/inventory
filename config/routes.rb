@@ -7,4 +7,6 @@ Inventory::Application.routes.draw do
   get 'sign_out' => 'sessions#destroy', :as => :sign_out
 
   root :to => 'welcome#index'
+
+  resources :products
 end

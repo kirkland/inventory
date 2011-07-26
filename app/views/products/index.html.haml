@@ -1,0 +1,17 @@
+%h1 Manage Products
+
+%table
+  %tr
+    %th ID
+    %th Name
+    %th Category
+    %th On Hand
+    %th Image
+  -@products.each do |product|
+    %tr
+      %td=product.id
+      %td=product.name
+      %td=product.category
+      %td=product.on_hand
+      %td image here
+

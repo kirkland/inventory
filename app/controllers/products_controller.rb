@@ -1,2 +1,3 @@
-class ProductsController < InheritedResources::Base
+class ProductsController < ApplicationController
+  inherit_resources
 end
