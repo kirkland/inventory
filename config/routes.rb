@@ -8,5 +8,9 @@ Inventory::Application.routes.draw do
 
   root :to => 'welcome#index'
 
-  resources :products
+  resources :products do
+    collection do
+      get :iphone
+    end
+  end
 end
