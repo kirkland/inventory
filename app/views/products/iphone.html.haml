@@ -1,3 +1,4 @@
--@products.each do |product|
-  .product=image_tag product.image.url(:medium)
-.clear
+.product_list
+  -@products.each do |product|
+    .product=image_tag product.image.url(:medium)
+  .clear
