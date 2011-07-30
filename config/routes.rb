@@ -10,7 +10,9 @@ Inventory::Application.routes.draw do
 
   resources :products do
     collection do
-      get :iphone
+      get :phone
     end
   end
+
+  get 'phone' => 'products#phone'
 end

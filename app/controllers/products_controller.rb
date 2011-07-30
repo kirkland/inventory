@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   inherit_resources
 
-  def iphone
+  def phone
     @products = Product.all
   end
 end
