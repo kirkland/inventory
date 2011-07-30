@@ -53,4 +53,5 @@ Inventory::Application.configure do
   config.active_support.deprecation = :notify
 
   S3_BUCKET = 'ubonin-inventory-production'
+  S3_CREDENTIALS = { :access_key_id => ENV['S3_KEY'], :secret_access_key => ENV['S3_SECRET']
 end

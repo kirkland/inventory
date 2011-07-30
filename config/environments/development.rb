@@ -26,4 +26,5 @@ Inventory::Application.configure do
   config.assets.compress = false
 
   S3_BUCKET = 'ubonin-inventory-dev'
+  S3_CREDENTIALS = { :access_key_id => ENV['UBONIN_INVENTORY_S3_KEY'], :secret_access_key => ENV['UBONIN_INVENTORY_S3_SECRET']
 end
