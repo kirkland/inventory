@@ -6,6 +6,7 @@
     = javascript_include_tag "application"
     /[if lt IE 7]
       = stylesheet_link_tag "ie"
+    = javascript_tag "#{yield(:js)};"
     = csrf_meta_tags
   %body
     #main

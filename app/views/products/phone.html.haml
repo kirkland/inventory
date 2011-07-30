@@ -4,3 +4,6 @@
       .name=product.name
       .image=image_tag product.image.url(:medium)
   .clear
+
+-content_for :js do
+  p=new ProductPicker();

@@ -1,0 +1,3 @@
+class @ProductPicker
+  constructor: () ->
+    @items = []
