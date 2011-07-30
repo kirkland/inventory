@@ -12,3 +12,8 @@ gem 'inherited_resources'
 gem 'formtastic'
 
 gem 'paperclip'
+
+group :production do
+  gem 'pg'
+  gem 'thin'
+end
