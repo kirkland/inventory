@@ -3,7 +3,7 @@ class Product < ActiveRecord::Base
                             :storage => :s3,
                             :s3_credentials => S3_CREDENTIALS,
                             :bucket => S3_BUCKET,
-                            :path => "images/:id.:extension"
+                            :path => "images/:id/:style.:extension"
 
   CATEGORIES = ['Necklace', 'Bracelet', 'Earring', 'Ring', 'Hair Accessories']
 end
