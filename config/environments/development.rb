@@ -24,4 +24,6 @@ Inventory::Application.configure do
 
   # Do not compress assets
   config.assets.compress = false
+
+  S3_BUCKET = 'ubonin-inventory-dev'
 end
