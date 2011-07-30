@@ -9,8 +9,8 @@ gem 'uglifier'
 gem 'jquery-rails'
 gem 'inherited_resources'
 gem 'formtastic'
-
 gem 'paperclip'
+gem 'aws-s3', :require => 'aws/s3'
 
 group :production do
   gem 'pg'
